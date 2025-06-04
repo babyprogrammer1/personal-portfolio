@@ -1,4 +1,10 @@
-import { JetBrains_Mono } from "next/font/google";
+import { Inter } from "next/font/google";
+
+const inter = Inter({
+  variable: "--font-inter",
+  subsets: ["latin"],
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+});
 import "./globals.css";
 
 // Components
@@ -6,11 +12,6 @@ import MainNav from "@/components/MainNav";
 import PageTransition from "@/components/PageTransition";
 import RectangleTransition from "@/components/RectangleTransition";
 
-const jetBrainMono = JetBrains_Mono({
-  variable: "--font-jetbrain-mono",
-  subsets: ["latin"],
-  weight: ["100", "200", "300", "400", "500", "600", "700", "800"],
-});
 
 export const metadata = {
   title: "Home | Personal Portfolio",
@@ -20,7 +21,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={` ${jetBrainMono.variable} antialiased overflow-hidden relative`}>
+      <body className={` ${inter.variable} antialiased overflow-hidden relative`}>
         <RectangleTransition />
         <PageTransition>
         <div className="flex">
