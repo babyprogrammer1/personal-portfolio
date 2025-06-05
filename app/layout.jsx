@@ -11,7 +11,8 @@ import "./globals.css";
 import MainNav from "@/components/MainNav";
 import PageTransition from "@/components/PageTransition";
 import RectangleTransition from "@/components/RectangleTransition";
-
+import Gradient from "@/components/Gradient";
+import Header from "@/components/Header";
 
 export const metadata = {
   title: "Home | Personal Portfolio",
@@ -22,6 +23,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={` ${inter.variable} antialiased overflow-hidden relative`}>
+        <Gradient />
         <RectangleTransition />
         <PageTransition>
         <div className="flex">
@@ -29,8 +31,8 @@ export default function RootLayout({ children }) {
           <div className="hidden 2xl:flex w-[285px] h-screen bg-secondary">
             <MainNav />
           </div>
-          <div className="w-full max-w-[1130px] px-[15px] mx-auto">
-            <header>header</header>
+            <div className="w-full max-w-[1130px] px-[15px] mx-auto">
+              <Header />
             <div>{children}</div>
           </div>
         </div>
