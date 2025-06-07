@@ -4,6 +4,7 @@
 
 @theme {
   /* breakpoint */
+  --breakpoint-xs: 440px;
   --breakpoint-sm : 640px;
   --breakpoint-md: 768px;
   --breakpoint-lg: 1024px;
@@ -69,4 +70,9 @@ body {
 
 .btn-white {
   @apply bg-white hover:bg-white/90 text-primary;
+}
+
+/* swiper css */
+.swiper {
+  margin: 0 !important;
 }
