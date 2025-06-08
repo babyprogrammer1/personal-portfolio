@@ -27,7 +27,7 @@ const Home = () => {
       <div className="flex flex-col xl:flex-row items-center justify-between w-full">
         {/* text */}
         <div className="w-full xl:w-[550px] flex flex-col items-center xl:items-start
-        text-center xl:text-left">
+        text-center xl:text-left xl:mt-[10px] xs:mt-[30px]">
           <h1 className= "h1 flex-1 mb-[28px]">Hi! I'm Zoe, <br />
             <TypeAnimation
               sequence={["Web Developer", 2000, "Front-end Developer", 2000]}
@@ -72,7 +72,7 @@ const Home = () => {
            transition w-[48px] h-[48px] text-[22px] flex items-center justify-center rounded-full cursor-pointer" />
         </div>
         {/* blob & image */}
-        <div className="hidden xl:block flex-1 relative z-20">
+        <div className="hidden xl:block flex-1 relative z-20 xl:mt-[50px]">
           {/* blob */}
           <Blob containerStyles="w-[560px] h-[560px]" />
           {/* Avatar image */}

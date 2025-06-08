@@ -50,7 +50,7 @@ const About = () => {
             justify-center rounded-full cursor-pointer"/>
           </div>
           {/* scroll area */}
-          <ScrollArea className="w-full h-[680px] ">
+          <ScrollArea className="w-full h-[680px] xl:mt-[60px] xs:mt-[120px] xs:h-screen">
             <div>
               <div className="flex items-center gap-3 mb-4 xl:mt-12">
                 <div className="w-2 h-2 bg-accent rounded-full"></div>
@@ -63,7 +63,7 @@ const About = () => {
                 I focus on crafting visually stunning, user-friendly web experiences that not only look great but also function
                 seamlessly, ensuring every detail is carefully designed and executed.
               </p>
-              <div className="flex flex-col items-start gap-16">
+              <div className="flex flex-col items-start gap-16 xs:gap-6">
                 <Stats/>
                 <Testimonials/>
                 <Info/>
