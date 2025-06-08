@@ -20,7 +20,7 @@
   --color-tertiary-hover: #271f40;
 
   /* font family*/
-  --font-primary: "Inter", "JetBrains Mono", monospace;
+  --font-primary: "DM Sans", "JetBrains Mono", monospace;
 }
 
 body {
