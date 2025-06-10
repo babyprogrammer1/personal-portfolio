@@ -5,7 +5,7 @@ const Stats = () => {
         <div className="flex flex-col xl:flex-row xl:items-center gap-8 xl:gap-12">
             <div className="flex gap-4">
                 <div className="text-5xl font-bold text-accent flex ">
-                    <CountUp end={2} duration={8} delay={4} className="block w-[60px]" />      
+                    <CountUp end={2} duration={6} delay={3} className="block w-[60px]" />      
                     <div>+</div>
                 </div>
                 <span>
@@ -17,7 +17,7 @@ const Stats = () => {
         
             <div className="flex gap-4">
                 <div className="text-5xl font-bold text-accent flex ">
-                    <CountUp end={2} duration={8} delay={4} className="block w-[60px]" />      
+                    <CountUp end={2} duration={6} delay={3} className="block w-[60px]" />      
                 </div>
                 <span>
                     Clients <br /> Worldwide

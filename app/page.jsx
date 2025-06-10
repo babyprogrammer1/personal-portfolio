@@ -63,7 +63,7 @@ const Home = () => {
               <span className="text-accent">
                 <HiOutlineMail className="text-xl" />
               </span>
-              <span>rafiuayomide@gmail.com</span>
+              <span>rafiuayomide1811@gmail.com</span>
             </div>
           </div>
           {/* socials */}
@@ -76,14 +76,14 @@ const Home = () => {
           {/* blob */}
           <Blob containerStyles="w-[560px] h-[560px]" />
           {/* Avatar image */}
-          <Image
+          {/*<Image
             src={avatarImg}
             alt=""
-            width={440}
-            height={600}
+            width={300}
+            height={450}
             quality={100}
             className="absolute -top-16 left-[120px]"
-          />
+          />*/}
           {/* overlay gradient */}
           <div className="w-full h-[164px] absolute bottom-0 right-0 bg-gradient-to-t from-primary via-primary/90 to-primary/40"></div>
         </div>

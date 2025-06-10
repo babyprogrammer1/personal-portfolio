@@ -105,7 +105,7 @@ const Work = () => {
                   <Swiper
                     modules={[Pagination]}
                     pagination={{ clickable: true, dynamicBullets: true }}
-                    className="h-max xl:h-[460px]"
+                    className="h-max xl:h-[420px]"
                   >
                     {projects.filter((project) => project.category === category).map((project) => {
                       return (
