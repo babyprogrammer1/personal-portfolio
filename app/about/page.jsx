@@ -48,9 +48,9 @@ const About = () => {
               iconStyles="w-[40px] h-[40px] text-[20px] text-accent hover:text-accent-hover transition-all flex items-center justify-center rounded-full cursor-pointer"/>
           </div>
           {/* scroll area */}
-          <ScrollArea className="w-full h-[600px] xl:mt-[40px] xs:mt-[30px] sm:mt-[40px] xs:h-screen">
+          <ScrollArea className="w-full h-[600px] xl:mt-[60px] xs:mt-[30px] sm:mt-[40px] xs:h-screen">
             <div>
-              <div className="flex items-center lg:justify-start gap-3 mb-4 xl:mt-10 xs:mt-5">
+              <div className="flex items-center lg:justify-start gap-3 mb-4 xl:mt-11 xs:mt-5">
                 <div className="w-2 h-2 bg-accent rounded-full"></div>
                 <p>About me</p>
               </div>
