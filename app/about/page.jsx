@@ -50,7 +50,7 @@ const About = () => {
           {/* scroll area */}
           <ScrollArea className="w-full h-[600px] xl:mt-[120px] xs:mt-[30px] sm:mt-[40px] xs:h-screen">
             <div>
-              <div className="flex items-center lg:justify-start gap-3 mb-4 xl:mt-20 xs:mt-5">
+              <div className="flex items-center lg:justify-center gap-3 mb-4 xl:mt-20 xs:mt-5">
                 <div className="w-2 h-2 bg-accent rounded-full"></div>
                 <p>About me</p>
               </div>
