@@ -50,7 +50,7 @@ const About = () => {
             justify-center rounded-full cursor-pointer"/>
           </div>
           {/* scroll area */}
-          <ScrollArea className="w-full h-[680px] xl:mt-[60px] xs:mt-[100px] sm:mt-[20px] xs:h-screen">
+          <ScrollArea className="w-full h-[680px] xl:mt-[60px] xs:mt-[50px] sm:mt-[60px] xs:h-screen">
             <div>
               <div className="flex items-center gap-3 mb-4 xl:mt-12">
                 <div className="w-2 h-2 bg-accent rounded-full"></div>
