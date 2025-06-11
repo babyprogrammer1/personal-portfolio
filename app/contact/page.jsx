@@ -60,7 +60,7 @@ const Contact = () => {
       setModalOpen(true);
       form.reset();
     } catch (err) {
-      setError("Failed to send message.");
+      setError(err?.text || err?.message || JSON.stringify(err) || "Failed to send message.");
       setModalOpen(true);
     } finally {
       setLoading(false);
