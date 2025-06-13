@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import { useState } from "react";
-import emailjs from "emailjs-com";
+import emailjs from "@emailjs/browser";
 
 import { Label } from "@/components/ui/label";
 import { Input } from "@/components/ui/input";
@@ -17,7 +17,7 @@ function Modal({ open, onClose, message, isError }) {
   if (!open) return null;
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/40">
-      <div className="bg-white text-primary rounded-lg shadow-lg p-6 min-w-[280px] max-w-[90vw] flex flex-col items-center">
+      <div className="bg-secondary text-primary rounded-lg shadow-lg p-6 min-w-[280px] max-w-[90vw] flex flex-col items-center">
         <p className={isError ? "text-red-600" : "text-green-600"}>{message}</p>
         <button
           className="mt-6 px-4 py-2 rounded bg-accent text-white hover:bg-accent-hover transition"
@@ -60,7 +60,13 @@ const Contact = () => {
       setModalOpen(true);
       form.reset();
     } catch (err) {
-      setError(err?.text || err?.message || JSON.stringify(err) || "Failed to send message.");
+      console.error('EmailJS error:', err);
+      let errorMsg = 'Failed to send message.';
+      if (err?.text) errorMsg = err.text;
+      else if (err?.message) errorMsg = err.message;
+      else if (typeof err === 'string') errorMsg = err;
+      else if (err && typeof err === 'object') errorMsg = JSON.stringify(err);
+      setError('Network or EmailJS error: ' + errorMsg + '\nCheck your EmailJS credentials and template variables.');
       setModalOpen(true);
     } finally {
       setLoading(false);
