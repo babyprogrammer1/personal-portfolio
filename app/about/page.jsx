@@ -11,6 +11,7 @@ import Journey from "@/components/Journey";
 import Skills from "@/components/Skills";
 import Blob from "@/components/Blob";
 import Socials from "@/components/Socials";
+import Certificates from "@/components/Certificates";
 
 
 
@@ -48,9 +49,9 @@ const About = () => {
               iconStyles="w-[40px] h-[40px] text-[20px] text-accent hover:text-accent-hover transition-all flex items-center justify-center rounded-full cursor-pointer"/>
           </div>
           {/* scroll area */}
-          <ScrollArea className="w-full h-[600px] xl:mt-[120px] xs:mt-[40px] sm:mt-[60px] xs:h-screen">
+          <ScrollArea className="w-full h-[600px] xl:mt-[60px] xs:mt-[40px] sm:mt-[60px] xs:h-screen">
             <div>
-              <div className="flex items-center lg:justify-center gap-3 mb-4 xl:mt-20 xs:mt-10">
+              <div className="flex items-center gap-3 mb-4 xl:mt-4 xs:mt-10">
                 <div className="w-2 h-2 bg-accent rounded-full"></div>
                 <p>About me</p>
               </div>
@@ -60,12 +61,21 @@ const About = () => {
               <p className="max-w-[480px] mb-10 text-base xl:text-lg">
                 I focus on crafting visually stunning, user-friendly web experiences that not only look great but also function seamlessly, ensuring every detail is carefully designed and executed.
               </p>
+              {/* Download CV button */}
+              <a
+                href="/assets/cv.pdf"
+                download
+                className="inline-block mb-8 px-6 py-3 bg-accent text-white font-semibold rounded-lg shadow-md hover:bg-accent-hover transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2"
+              >
+                Download CV
+              </a>
               <div className="flex flex-col items-start gap-10 xs:gap-5">
                 <Stats/>
                 <Testimonials/>
                 <Info/>
                 <Journey/>
                 <Skills/>
+                <Certificates/>
               </div>
             </div>
           </ScrollArea>
