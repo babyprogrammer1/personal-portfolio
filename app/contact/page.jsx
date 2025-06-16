@@ -52,7 +52,7 @@ const Contact = () => {
     try {
       await emailjs.send(
         "service_o305roe",
-        "template_wq5h7yj",
+        "template_n15ydpd",
         data,
         "rEMJV0NUlJcAvvWVZ"
       );
