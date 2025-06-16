@@ -18,7 +18,7 @@ function Modal({ open, onClose, message, isError }) {
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/40">
       <div className="bg-secondary text-primary rounded-lg shadow-lg p-6 min-w-[280px] max-w-[90vw] flex flex-col items-center">
-        <p className={isError ? "text-red-600" : "text-green-600"}>{message}</p>
+        <p className={isError ? "text-red-600" : "text-accent"}>{message}</p>
         <button
           className="mt-6 px-4 py-2 rounded bg-accent text-white hover:bg-accent-hover transition"
           onClick={onClose}
