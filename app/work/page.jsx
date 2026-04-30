@@ -21,8 +21,8 @@ const projects = [
     title: "An Audio Store",
     description: "React + Tailwind",
     image: "/assets/work/thumb1.jpg",
-    link: "",
-    github: "",
+    link: "https://audiophile-s.netlify.app/",
+    github: "https://github.com/babyprogrammer1/audiophile",
     tech: ["React"]
   },
   {
@@ -31,8 +31,8 @@ const projects = [
     title: "Agency Ai website",
     description: "React + Tailwind",
     image: "/assets/work/thumb2.jpg",
-    link: "",
-    github: "",
+    link: "https://agency-a-i.netlify.app/",
+    github: "https://github.com/babyprogrammer1/agency",
     tech: ["React"]
   },
   {
@@ -41,8 +41,8 @@ const projects = [
     title: "Noors path webpage",
     description: "HTML + CSS",
     image: "/assets/work/thumb3.jpg",
-    link: "",
-    github: "",
+    link: "https://noorspath.netlify.app/",
+    github: "https://github.com/babyprogrammer1/Noor-s-path",
     tech: ["HTML"]
   },
   {
@@ -51,8 +51,8 @@ const projects = [
     title: "Personal Portfolio website",
     description: "Next + Tailwind",
     image: "/assets/work/thumb4.jpg",
-    link: "",
-    github: "",
+    link: "https://www.rafiuayomide.me/",
+    github: "https://github.com/babyprogrammer1/personal-portfolio",
     tech: ["Next"]
   },
 ];
