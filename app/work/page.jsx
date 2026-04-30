@@ -18,19 +18,19 @@ const projects = [
   {
     id: 1,
     category: "frontend",
-    title: "s",
+    title: "An Audio Store",
     description: "React + Tailwind",
-    image: "/assets/work/thumb1.png",
+    image: "/assets/work/thumb1.jpg",
     link: "",
     github: "",
     tech: ["React"]
   },
   {
     id: 2,
-    category: "fullstack",
-    title: "s",
+    category: "frontend",
+    title: "Agency Ai website",
     description: "React + Tailwind",
-    image: "/assets/work/thumb2.png",
+    image: "/assets/work/thumb2.jpg",
     link: "",
     github: "",
     tech: ["React"]
@@ -38,33 +38,23 @@ const projects = [
   {
     id: 3,
     category: "frontend",
-    title: "s",
-    description: "React + Tailwind",
-    image: "/assets/work/thumb3.png",
+    title: "Noors path webpage",
+    description: "HTML + CSS",
+    image: "/assets/work/thumb3.jpg",
     link: "",
     github: "",
-    tech: ["React"]
+    tech: ["HTML"]
   },
   {
     id: 4,
     category: "frontend",
-    title: "s",
-    description: "React + Tailwind",
-    image: "/assets/work/thumb4.png",
+    title: "Personal Portfolio website",
+    description: "Next + Tailwind",
+    image: "/assets/work/thumb4.jpg",
     link: "",
     github: "",
-    tech: ["React"]
+    tech: ["Next"]
   },
-  {
-    id: 5,
-    category: "fullstack",
-    title: "s",
-    description: "React + Tailwind",
-    image: "/assets/work/thumb5.png",
-    link: "",
-    github: "",
-    tech: ["React"]
-  }
 ];
 const categories = ["frontend", "fullstack"];
 
