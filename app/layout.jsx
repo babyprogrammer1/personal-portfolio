@@ -22,7 +22,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={` ${dmSans.variable} antialiased overflow-auto relative`}>
+      <body className={` ${dmSans.variable} antialiased relative`}>
         <Gradient />
         <RectangleTransition />
         <PageTransition>
