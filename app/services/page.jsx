@@ -54,7 +54,7 @@ const Services = () => {
         opacity: 1, 
         transition: { delay: 2, duration: 0.4, ease: "easeInOut" } 
       }}
-      className="min-h-screen flex items-center"
+      className="h-screen flex items-center"
     >
       <div className="container mx-auto w-full flex flex-col gap-16 xl:mt-[70px]">
         {/* text */}

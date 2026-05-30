@@ -20,7 +20,7 @@ const Home = () => {
         opacity: 1, 
         transition: { delay: 2, duration: 0.4, ease: "easeInOut" } 
       }}
-      className = "min-h-screen flex items-center"
+      className = "h-screen flex items-center"
     >
       {/* pattern */}
       <Pattern />
