@@ -23,7 +23,7 @@ const projects = [
     image: "/assets/work/thumb1.jpg",
     link: "https://audiophile-s.netlify.app/",
     github: "https://github.com/babyprogrammer1/audiophile",
-    tech: ["React"]
+    tech: ["React", "TailwindCss"]
   },
   {
     id: 2,
@@ -33,7 +33,7 @@ const projects = [
     image: "/assets/work/thumb2.jpg",
     link: "https://agency-a-i.netlify.app/",
     github: "https://github.com/babyprogrammer1/agency",
-    tech: ["React"]
+    tech: ["React", "TailwindCss","Framer Motion"]
   },
   {
     id: 3,
@@ -43,7 +43,7 @@ const projects = [
     image: "/assets/work/thumb3.jpg",
     link: "https://noorspath.netlify.app/",
     github: "https://github.com/babyprogrammer1/Noor-s-path",
-    tech: ["HTML"]
+    tech: ["HTML","CSS","Javascript"]
   },
   {
     id: 4,
@@ -53,7 +53,7 @@ const projects = [
     image: "/assets/work/thumb4.jpg",
     link: "https://www.rafiuayomide.me/",
     github: "https://github.com/babyprogrammer1/personal-portfolio",
-    tech: ["Next"]
+    tech: ["Next","TailwindCss","Framer Motion","Swiper","React Icons","Vercel"]
   },
 ];
 const categories = ["frontend", "fullstack"];
@@ -139,7 +139,7 @@ const Work = () => {
                             </div>
                             {/* project img */}
                             <div className="w-full h-[220px] sm:h-[300px] xl:h-[400px] relative bg-pink-50/20 order-1
-                            xl:order-none overflow-hidden">
+                            xl:order-none">
                               <Image src={project.image} alt={project.image} fill
                               className="object-cover"/>
                             </div>
