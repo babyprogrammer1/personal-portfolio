@@ -66,17 +66,17 @@ const Work = () => {
         opacity: 1, 
         transition: { delay: 2, duration: 0.4, ease: "easeInOut" } 
       }}
-      className="min-h-screen flex items-center py-24 xl:py-0"
+      className="min-h-screen flex items-start py-24 xl:items-center xl:py-0"
     >
-      <div className="container mx-auto w-full h-full xl:mt-5 flex flex-col justify-center">
+      <div className="container mx-auto w-full h-full xl:mt-5 flex flex-col justify-center gap-8 xl:gap-12">
         {/* heading */}
-        <h2 className="h2 mb-6 xl:mb-12 xl:mt-14 max-w-[600px]">
+        <h2 className="h2 max-w-[600px] xl:mt-14">
           My Latest <span className="text-accent">Work</span>
         </h2>
         {/* tabs */}
-        <Tabs defaultValue="frontend" className="w-full flex flex-col gap-6 xl:gap-12">
+        <Tabs defaultValue="frontend" className="w-full flex flex-col gap-6 xl:gap-12 min-h-0">
           {/* tabs list */}
-          <TabsList className="flex flex-wrap justify-center items-center gap-4 h-full mb-4 xl:mb-0">
+          <TabsList className="flex flex-wrap justify-start sm:justify-center items-center gap-4 h-full mb-2 xl:mb-0">
             {categories.map((category) => {
               return (
                 <TabsTrigger key={category} value={category} className="capitalize border border-white/10 
@@ -87,20 +87,21 @@ const Work = () => {
             })}
           </TabsList>
           {/* tabs content */}
-          <div className="h-[400px] scrollbar scrollbar-thumb-accent scrollbar-track-accent/5 overflow-y-scroll 
-          xl:overflow-y-visible">
+          <div className="max-h-[calc(100vh-14rem)] scrollbar scrollbar-thumb-accent scrollbar-track-accent/5 overflow-y-auto 
+          xl:max-h-none xl:overflow-visible">
             {categories.map((category) => {
               return (
-                <TabsContent key={category} value={category}>
+                <TabsContent key={category} value={category} className="mt-0">
                   <Swiper
+                    autoHeight
                     modules={[Pagination]}
                     pagination={{ clickable: true, dynamicBullets: true }}
-                    className="h-max xl:h-[420px]"
+                    className="w-full"
                   >
                     {projects.filter((project) => project.category === category).map((project) => {
                       return (
-                        <SwiperSlide key={project.id} className="h-full ">
-                          <div className="flex flex-col xl:flex-row gap-8 xl:gap-12">
+                        <SwiperSlide key={project.id} className="h-auto pb-10">
+                          <div className="flex flex-col xl:flex-row gap-6 xl:gap-12">
                             {/* project info */}
                             <div className="w-full max-w-[380px] flex flex-col gap-6 xl:gap-8 xl:pt-6 order-2
                             xl:order-none">
@@ -109,7 +110,7 @@ const Work = () => {
                                 {project.title}
                               </h3>
                               {/* tech */}
-                              <div className="xl:mb-4 max-w-[300px] min-h-[130px]">
+                              <div className="xl:mb-4 max-w-[300px] min-h-[110px]">
                                 <p className="mb-4">Technologies Used</p>
                                 <ul className="flex flex-wrap gap-4">
                                   {project.tech.map((item, index) => {
@@ -123,13 +124,13 @@ const Work = () => {
                               {/* btns */}
                               <div className="flex flex-col sm:flex-row gap-4 items-start">
                               <Link href={project.link}>
-                                <button className="btn btn-sm btn-accent flex gap-2">
+                                <button className="btn btn-sm btn-accent flex gap-2 w-full sm:w-auto">
                                   <MdArrowOutward className="text-xl" />
                                   <span>Live Project</span>
                                 </button>
                               </Link>
                               <Link href={project.github}>
-                                <button className="btn btn-sm btn-white flex gap-2">
+                                <button className="btn btn-sm btn-white flex gap-2 w-full sm:w-auto">
                                   <FaGithub className="text-xl" />
                                   <span>Github Repo</span>
                                 </button>
@@ -137,7 +138,7 @@ const Work = () => {
                               </div>
                             </div>
                             {/* project img */}
-                            <div className="w-full h-[200px] md:h-[300px] xl:h-[400px] relative bg-pink-50/20 order-1
+                            <div className="w-full h-[220px] sm:h-[300px] xl:h-[400px] relative bg-pink-50/20 order-1
                             xl:order-none overflow-hidden">
                               <Image src={project.image} alt={project.image} fill
                               className="object-cover"/>

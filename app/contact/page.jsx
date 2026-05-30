@@ -91,7 +91,7 @@ const Contact = () => {
           opacity: 1,
           transition: { delay: 2, duration: 0.4, ease: "easeInOut" }
         }}
-        className="h-screen flex items-center py-24 xl:py-0"
+        className="min-h-screen flex items-center py-24 xl:py-0"
       >
         <div className="container mx-auto w-full h-full xl:mt-14 flex flex-col
           items-center xl:justify-center xl:overflow-hidden scrollbar scrollbar-thumb-accent

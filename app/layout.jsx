@@ -31,9 +31,9 @@ export default function RootLayout({ children }) {
           <div className="hidden 2xl:flex w-[285px] h-screen bg-secondary">
             <MainNav />
           </div>
-            <div className="w-full max-w-[1130px] px-[15px] mx-auto">
+            <div className="w-full max-w-[1130px] px-[15px] mx-auto min-w-0">
               <Header />
-            <div>{children}</div>
+            <div className="w-full">{children}</div>
           </div>
         </div>
         </PageTransition>
