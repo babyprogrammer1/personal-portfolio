@@ -56,7 +56,7 @@ const Services = () => {
       }}
       className="h-screen flex items-center"
     >
-      <div className="container mx-auto w-full flex flex-col gap-16 xl:mt-[80px]">
+      <div className="container mx-auto w-full flex flex-col gap-16 xl:mt-[120px]">
         {/* text */}
         <div className="flex flex-col xl:flex-row justify-between items-start xl:items-center
         gap-8">
