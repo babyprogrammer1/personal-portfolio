@@ -8,7 +8,6 @@ import { Pagination } from "swiper/modules";
 // import swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
-import { ScrollArea } from "@/components/ui/scroll-area";
 
 // tabs
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
@@ -73,8 +72,8 @@ const Work = () => {
     >
       <div className="container mx-auto px-2 md:px-4 xl:px-0">
         <div className="flex flex-col xl:flex-row items-center gap-10 xl:gap-24 w-full xl:h-[680px]">
-          <ScrollArea className="w-full h-[600px] xl:mt-[60px] xs:mt-[40px] sm:mt-[60px] xs:h-screen">
-            <div className="pr-4">
+          <ScrollArea className="w-full h-[calc(100vh-8rem)] sm:h-[calc(100vh-7rem)] xl:h-[680px] xl:mt-[60px] xs:mt-[40px] sm:mt-[60px]">
+            <div className="pr-4 pb-6">
               {/* heading */}
               <h2 className="h2 mb-6 xl:mb-12 xl:mt-4 max-w-[600px]">
                 My Latest <span className="text-accent">Work</span>
@@ -93,7 +92,7 @@ const Work = () => {
                   })}
                 </TabsList>
                 {/* tabs content */}
-                <div>
+                <div className="pb-4">
                   {categories.map((category) => {
                     return (
                       <TabsContent key={category} value={category} className="mt-0">
