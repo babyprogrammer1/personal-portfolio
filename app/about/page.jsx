@@ -25,7 +25,7 @@ const About = () => {
       }}
       className="h-screen flex items-center"
     >
-      <div className="container mx-auto px-2 md:px-4 xl:px-0 xl:mt-[120px]">
+      <div className="container mx-auto px-2 md:px-4 xl:px-0 sm:mt-[30px] md:mt-[60px]">
         <div className="flex flex-col xl:flex-row items-center gap-10 xl:gap-24 w-full xl:h-[680px]">
           {/* img & social icon */}
           <div className="hidden xl:flex flex-col w-full h-full pt-10 max-w-[380px] relative ">
