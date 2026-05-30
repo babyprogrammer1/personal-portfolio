@@ -66,7 +66,7 @@ const Work = () => {
         opacity: 1, 
         transition: { delay: 2, duration: 0.4, ease: "easeInOut" } 
       }}
-      className="flex items-start py-24 xl:items-center xl:py-0 overflow-y-auto"
+      className="flex items-start h-full py-24 xl:items-center xl:py-0 overflow-y-auto"
     >
       <div className="container mx-auto w-full h-full xl:mt-5 flex flex-col justify-center gap-8 xl:gap-12">
         {/* heading */}
@@ -141,7 +141,7 @@ const Work = () => {
                             <div className="w-full h-[220px] sm:h-[300px] xl:h-[400px] relative bg-pink-50/20 order-1
                             xl:order-none">
                               <Image src={project.image} alt={project.image} fill
-                              className="object-cover"/>
+                              className="object-contain"/>
                             </div>
                           </div>
                         </SwiperSlide>
