@@ -7,11 +7,11 @@ const socials = [
     },
     {
         icon: <BiLogoInstagramAlt />,
-        link: "https://www.instagram.com/yourprofile",
+        link: "https://www.instagram.com/myjoy_hascometh",
     },
     {
         icon: <BiLogoLinkedin />,
-        link: "https://www.linkedin.com/in/rafiuayomide",
+        link: "https://www.linkedin.com/in/rafiuayomidez",
     },
     {
         icon: <BiLogoGithub />,
