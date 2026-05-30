@@ -1,5 +1,7 @@
 "use client"
 import { motion } from "framer-motion";
+import { ScrollArea } from "@/components/ui/scroll-area";
+
 import { Swiper, SwiperSlide } from "swiper/react";
 //import swiper modules
 import { Pagination } from "swiper/modules";
